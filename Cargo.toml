@@ -1,0 +1,10 @@
+[package]
+name = "mlir_linker_example"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+cxx = "1.0.136"
+
+[build-dependencies]
+cmake = "0.1.52"
