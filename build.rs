@@ -5,5 +5,6 @@ fn main() {
     let lib_dir = cmake::build("cpp_lib");
     println!("cargo:rustc-link-search=native={}/lib",lib_dir.display());
     println!("cargo:rustc-link-search=native={}", lib_dir.display());
-    println!("cargo:rustc-link-lib=static=OtherLib")
+    println!("cargo:rustc-link-lib=static=OtherLib");
+    println!("cargo:rustc-link-lib=static=LibA");
 }
